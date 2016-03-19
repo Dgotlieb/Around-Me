@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#3F51B5"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/fragment_favourites">
+
+
+    <ImageButton
+        style="?android:attr/buttonBarButtonStyle"
+        android:id="@+id/toolBarAllDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:src="@android:drawable/ic_menu_delete"
+        />
+
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolBarShortcut"
+        android:layout_marginStart="30sp"
+
+        android:src="@drawable/shortcut"
+        android:background="@android:color/transparent"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:scaleType="fitEnd"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="50dp"
+        android:text="My Favourites"/>
+
+
+
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,145 @@
+<resources>
+    <string name="app_name">Around Me</string>
+    <string-array name="category_array">
+        <item>Bar</item>
+        <item>Bank</item>
+        <item>Airport</item>
+        <item>Police</item>
+        <item>Hospital</item>
+        <item>Restaurant</item>
+        <item>Food</item>
+        <item>Gym</item>
+        <item>Accounting</item>
+        <item>Amusement park</item>
+        <item>Aquarium</item>
+        <item> Art gallery</item>
+        <item> Atm</item>
+        <item> Bakery</item>
+        <item>Beauty salon</item>
+        <item> Bicycle store</item>
+        <item> Book store</item>
+        <item> Bowling alley</item>
+        <item>Bus station</item>
+        <item>Cafe</item>
+        <item>Campground</item>
+        <item>Car dealer</item>
+        <item>Car rental</item>
+        <item>Car repair</item>
+        <item>Car wash</item>
+        <item>Casino</item>
+        <item>Cemetery</item>
+        <item>Church</item>
+        <item>City hall</item>
+        <item>Clothing store</item>
+        <item>Convenience store</item>
+        <item>Courthouse</item>
+        <item>Dentist</item>
+        <item>Department store</item>
+        <item>Doctor</item>
+        <item>Electrician</item>
+        <item>Electronics_store</item>
+        <item>Embassy</item>
+        <item>Establishment</item>
+        <item>Finance</item>
+        <item>Fire_station</item>
+        <item>Florist</item>
+        <item>Funeral home</item>
+        <item>Furniture store</item>
+        <item>Gas station</item>
+        <item>General contractor</item>
+        <item> Grocery or supermarket</item>
+        <item> Hair care</item>
+        <item> Hardware store</item>
+        <item>Health</item>
+        <item>Hindu temple</item>
+        <item>Home goods store</item>
+        <item>Insurance agency</item>
+        <item>Jewelry store</item>
+        <item>Laundry</item>
+        <item>Lawyer</item>
+        <item>Library</item>
+        <item> Liquor store</item>
+        <item> Local government_office</item>
+        <item> Locksmith</item>
+        <item>Lodging</item>
+        <item>Meal delivery</item>
+        <item>Meal takeaway</item>
+        <item>Mosque</item>
+        <item> Movie rental</item>
+        <item> Movie theater</item>
+        <item>Moving company</item>
+        <item>Museum</item>
+        <item>Night club</item>
+        <item>Painter</item>
+        <item> Park</item>
+        <item>Parking</item>
+        <item>Pet store</item>
+        <item>Pharmacy</item>
+        <item>Physiotherapist</item>
+        <item> Place of worship</item>
+        <item> Plumber</item>
+        <item> Post office</item>
+        <item> Real estate agency</item>
+        <item>Roofing contractor</item>
+        <item> Rv park</item>
+        <item>School</item>
+        <item>Shoe store</item>
+        <item>Shopping mall</item>
+        <item> Spa</item>
+        <item>Stadium</item>
+        <item>Storage</item>
+        <item>Store</item>
+        <item>Subway station</item>
+        <item>Synagogue</item>
+        <item>Taxi stand</item>
+        <item>Train station</item>
+        <item>Travel agency</item>
+        <item> University</item>
+        <item> Veterinary care</item>
+        <item>Zoo</item>
+
+
+    </string-array>
+
+    <string name="title_activity_maps">Map</string>
+     <string name="google_maps_key" translatable="false" templateMergeStrategy="preserve">
+        AIzaSyBGT8ttWMOcr2Yf4oDtCpT-8hxj78Vo9GY
+    </string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="no_geocoder_available">No geocoder available</string>
+    <string name="fetch_address">Fetch address</string>
+    <string name="address_found">Address found</string>
+    <string name="no_address_found">Sorry, no address found</string>
+    <string name="no_location_data_provided">No location data provided</string>
+    <string name="service_not_available">Sorry, the service is not available</string>
+    <string name="invalid_lat_long_used">Invalid latitude or longitude used</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">הגדרות</string>
+    <string name="hebrew">עברית</string>
+    <string name="english">English</string>
+    <string name="exit">Exit</string>
+    <string name="setDefaultUnit">Set Default Unit</string>
+    <string name="example_search">For example: Pizza in New-York</string>
+    <string name="kyeword_search">Find by keyword</string>
+    <string name="nearby_search">Find nearby places</string>
+    <string name="point_of_intr">Point of interest:</string>
+    <string name="navigate_button">Navigate</string>
+    <string name="Favourites_button">Favourites</string>
+    <string name="Share_button">Share</string>
+    <string name="map_button">Map</string>
+    <string name="my_Favorites">My Favorites Places</string>
+    <string name="Language_Options">Language Options</string>
+    <string name="km">KM</string>
+    <string name="miles">Miles</string>
+    <string name="common_apps">Common Apps</string>
+    <string name="send_by_email">Send by email</string>
+    <string name="send_by_whatsapp">Send by whatsApp</string>
+    <string name="send_by_message">Send by message</string>
+    <string name="delete">delete</string>
+    <string name="cancel">cancel</string>
+    <string name="best_places">Best places</string>
+    <string name="help">Help</string>
+    <string name="screenShot">Take a screenshot</string>
+</resources>

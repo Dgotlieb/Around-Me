@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menu_send_by_email"
+        android:icon="@drawable/email"
+        android:title="@string/send_by_email" />
+
+    <item android:id="@+id/menu_send_by_whatsapp"
+        android:icon="@drawable/whatsapp"
+        android:title="@string/send_by_whatsapp" />
+
+    <item android:id="@+id/menu_send_by_message"
+        android:icon="@android:drawable/ic_dialog_email"
+        android:title="@string/send_by_message" />
+
+
+    <item android:id="@+id/menu_delete"
+        android:icon="@android:drawable/ic_delete"
+        android:title="@string/delete" />
+
+    <item android:id="@+id/menu_cancel"
+        android:icon="@drawable/backpress"
+        android:title="@string/cancel" />
+</menu>

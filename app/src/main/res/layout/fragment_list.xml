@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+
+    tools:openDrawer="start">
+
+
+
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/realtive">
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:id="@+id/location_address_view"
+        android:layout_marginTop="60sp"
+        />
+
+
+
+    <include layout="@layout/tool_bar_handset"
+        android:id="@+id/listBar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent" />
+
+
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_below="@+id/location_address_view"
+            android:layout_height="wrap_content"
+            android:id="@+id/nearby_button"
+            android:layout_marginStart="20sp"
+            android:padding="5sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="10dp"
+
+            android:background="@drawable/button_state"
+            android:keepScreenOn="true"
+            android:text="@string/nearby_search"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginEnd="20sp"
+            android:layout_marginTop="10dp"
+
+            android:textColor="@android:color/black"
+            android:background="@drawable/button_state"
+            android:id="@+id/keyword_button"
+            android:padding="5sp"
+            android:text="@string/kyeword_search"
+            android:layout_below="@+id/location_address_view"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_below="@id/nearby_button"
+        android:singleLine="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="70sp"
+        android:layout_marginLeft="70sp"
+        android:focusableInTouchMode="true"
+
+        android:id="@+id/edit_search"
+        />
+
+     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:id="@+id/keyword_example"
+         android:layout_marginTop="10dp"
+         android:layout_below="@+id/edit_search"
+         android:layout_marginEnd="20sp"
+
+         android:text="@string/example_search"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:layout_marginTop="10dp"
+
+        android:id="@+id/search_button"
+        android:background="@android:color/transparent"
+        android:src="@android:drawable/ic_menu_search"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_below="@+id/keyword_button"
+        android:layout_alignEnd="@+id/keyword_button" />
+
+    <ImageButton
+        android:id="@+id/btnSpeak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:visibility="visible"
+        android:src="@drawable/microphone"
+        android:layout_above="@+id/places_list"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/category_spinner"
+        android:layout_marginLeft="10dp"
+        style="@style/spinner_style"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+
+        android:layout_alignTop="@+id/deccrease_distance_button"
+        android:layout_toLeftOf="@+id/deccrease_distance_button"
+        >
+
+
+    </Spinner>
+
+
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/plus_distance"
+        android:id="@+id/increase_distance_button"
+        android:visibility="gone"
+        android:background="@android:color/transparent"
+        android:layout_below="@id/keyword_example"
+        android:layout_alignBottom="@+id/tv"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/distanceTV"
+        android:layout_toEndOf="@+id/distanceTV" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/minus_distance"
+        android:id="@+id/deccrease_distance_button"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+
+        android:background="@android:color/transparent"
+        android:layout_below="@id/keyword_example"
+        android:layout_alignBottom="@+id/tv"
+        android:layout_toLeftOf="@+id/distanceTV"
+        android:layout_toStartOf="@+id/distanceTV" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:id="@+id/default_unit_tv"
+        android:text="KM"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_below="@+id/distanceTV"
+        android:layout_alignEnd="@+id/distanceTV"
+        android:layout_alignStart="@+id/distanceTV" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:id="@+id/distanceTV"
+        android:text="10"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/keyword_example"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/tv"-->
+        <!--android:layout_marginEnd="20sp"-->
+        <!--android:layout_below="@+id/search_button"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:visibility="gone"-->
+        <!--android:text="@string/point_of_intr"-->
+        <!--android:textSize="10sp"-->
+        <!-- -->
+         <!--/>-->
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/places_list"
+        android:visibility="visible"
+        android:layout_marginTop="50sp"
+        android:layout_below="@+id/search_button"
+        android:layout_alignRight="@+id/keyword_button"
+        android:layout_alignEnd="@+id/keyword_button">
+
+    </ListView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/multiple_fab"
+        android:focusableInTouchMode="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:fabSize="mini"
+        android:onClick="fabClicked"
+        android:clickable="true"
+        android:background="@android:color/black"
+        android:src="@drawable/multiple"
+        app:backgroundTint="@color/colorPrimary"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+         />
+
+
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:id="@+id/progressBar"
+        android:layout_alignTop="@+id/places_list"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/clear_et"
+        android:src="@drawable/clear_editt"
+        android:background="@android:color/transparent"
+        android:visibility="gone"
+        android:layout_marginLeft="20dp"
+
+        android:layout_alignBottom="@+id/btnSpeak"
+      />
+
+</RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/list_menu" />
+
+</android.support.v4.widget.DrawerLayout>

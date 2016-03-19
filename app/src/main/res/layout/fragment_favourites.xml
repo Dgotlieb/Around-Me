@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/frag_favorites"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/tool_bar_fav"
+        android:id="@+id/appFabBar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent" />
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/my_Favorites"-->
+        <!--android:textSize="20sp"/>-->
+
+
+
+    <ListView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/fabList">
+
+   </ListView>
+
+</LinearLayout>

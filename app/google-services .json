@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_id": "around-me-1143",
+    "project_number": "995810041327",
+    "name": "around me"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:995810041327:android:e5c244afbc1fd928",
+        "client_id": "android:com.example.daniel.aroundme",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.example.daniel.aroundme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "995810041327-6mrcehgsdprb1fktl8icdfad92v1u6p9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.daniel.aroundme",
+            "certificate_hash": "69F6C6094F109C8DE2F24988F82344A2E54A6C93"
+          }
+        }
+      ],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-73429639-1"
+          }
+        },
+        "cloud_messaging_service": {
+          "status": 1,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#3F51B5"
+    android:layout_height="match_parent">
+
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/maps_toolbar_satellite"
+        android:src="@drawable/satellite"
+        android:adjustViewBounds="true"
+        android:layout_marginStart="15sp"
+        android:background="@android:color/transparent"
+        android:cropToPadding="false"
+        android:scaleType="fitEnd"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/maps_toolbar_regular_show"
+        android:background="@android:color/transparent"
+        android:src="@drawable/globe"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:layout_marginStart="15sp"
+        android:scaleType="fitEnd"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/maps_toolbar_traffic"
+        android:background="@android:color/transparent"
+        android:src="@drawable/traffic"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:layout_marginStart="15sp"
+        android:scaleType="fitEnd"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbat_street_view"
+        android:background="@android:color/transparent"
+        android:src="@drawable/street_view"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:layout_marginStart="15sp"
+        android:scaleType="fitEnd"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar_screenshot"
+        android:background="@android:color/transparent"
+        android:src="@drawable/screen_shot"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:layout_marginStart="15sp"
+        android:scaleType="fitEnd"/>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar_clear"
+        android:background="@android:color/transparent"
+        android:src="@drawable/clear"
+        android:adjustViewBounds="true"
+        android:cropToPadding="false"
+        android:layout_marginStart="15sp"
+        android:scaleType="fitEnd"/>
+
+</android.support.v7.widget.Toolbar>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/maps_satellite"
+        android:icon="@drawable/satellite"
+        android:title="Satellite view" />
+
+    <item android:id="@+id/maps_map_view"
+        android:icon="@drawable/regular_show"
+        android:title="Map View" />
+
+    <item android:id="@+id/maps_traffic"
+        android:icon="@drawable/traffic"
+        android:title="Traffic updates" />
+
+
+    <item android:id="@+id/maps_street_view"
+        android:icon="@drawable/street_view"
+        android:title="Street View" />
+
+</menu>

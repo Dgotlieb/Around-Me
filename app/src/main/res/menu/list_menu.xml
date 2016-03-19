@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/list_settings"
+        android:icon="@drawable/settings"
+        android:title="Settings" />
+
+
+
+    <item android:id="@+id/list_favourites"
+        android:icon="@drawable/favourites_places"
+        android:title="My Favorites" />
+
+    <item android:id="@+id/list_help"
+        android:icon="@android:drawable/ic_menu_help"
+        android:title="Help" />
+
+
+    <item android:id="@+id/list_exit"
+        android:icon="@drawable/exit"
+        android:title="Exit" />
+
+</menu>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="colors">
+		<item>White</item>
+		<item>Blue</item>
+		<item>Green</item>
+		<item>Red</item>
+
+	</string-array>
+	
+	<string-array name="colorsValues">
+		<item>0</item>
+		<item>1</item>
+		<item>2</item>
+        <item>3</item>
+        <item>4</item>
+
+    </string-array>
+
+    <string-array name="Language">
+        <item>Hebrew</item>
+        <item>English</item>
+    </string-array>
+
+    <string-array name="LanguageValues">
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+</resources>
