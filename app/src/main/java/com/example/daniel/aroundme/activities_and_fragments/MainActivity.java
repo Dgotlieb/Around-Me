@@ -145,15 +145,7 @@ public class MainActivity extends AppCompatActivity implements Comunnicator {
         }
 
         //initialize google analytics tracker
-        tracker = this.getDefaultTracker();
-        analytics = GoogleAnalytics.getInstance(this);
-        analytics.setLocalDispatchPeriod(1800);
-        tracker = analytics.newTracker("UA-73429639-1");
-        tracker.enableExceptionReporting(true);
-        tracker.enableAdvertisingIdCollection(true);
-        tracker.enableAutoActivityTracking(true);
-
-
+      
         if (getIntent().getBooleanExtra("LOGOUT", false)) {
             finish();
         }
@@ -270,37 +262,11 @@ public class MainActivity extends AppCompatActivity implements Comunnicator {
         return false;
     }
 
-    synchronized public Tracker getDefaultTracker() {
-        if (tracker == null) {
-            GoogleAnalytics analytics = GoogleAnalytics.getInstance(this);
-            // To enable debug logging use: adb shell setprop log.tag.GAv4 DEBUG
-            tracker = analytics.newTracker(R.xml.global_tracker);
-        }
-        return tracker;
-    }
+   
 
     @Override
     protected void onDestroy() {
-        try {
 
-            //using google analytics tracker to track onDestroy
-            tracker.send(new HitBuilders.EventBuilder()
-                    .setCategory("OnDestroy is running")
-                    .setAction("onDestroy")
-                    .setLabel("OnDestroy is running")
-
-                    .build());
-            Thread.UncaughtExceptionHandler myHandler = new ExceptionReporter(
-                    tracker,                                        // Currently used Tracker.
-                    Thread.getDefaultUncaughtExceptionHandler(),      // Current default uncaught exception handler.
-                    this);
-            // Context of the application.
-
-// Make myHandler the new default uncaught exception handler.
-            Thread.setDefaultUncaughtExceptionHandler(myHandler);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
         super.onDestroy();
     }
 
